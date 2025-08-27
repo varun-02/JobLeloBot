@@ -12,6 +12,7 @@ def fetch_jobs():
     jobs = [
         {"title": "Software Engineer", "link": "https://example.com/job1"},
         {"title": "Backend Developer", "link": "https://example.com/job2"},
+        {"title": "Backend Developer", "link": "https://example.com/job3"}
     ]
     return jobs
 
@@ -30,7 +31,7 @@ def send_jobs():
         send_message("No new jobs found today.")
 
 # Schedule at 9 AM daily
-schedule.every().day.at("22:00").do(send_jobs)
+schedule.every().day.at("22:12").do(send_jobs)
 
 print("Job Bot is running... Press Ctrl+C to stop.")
 while True:
