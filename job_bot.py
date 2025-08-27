@@ -30,7 +30,7 @@ def send_jobs():
         send_message("No new jobs found today.")
 
 # Schedule at 9 AM daily
-schedule.every().day.at("21:40").do(send_jobs)
+schedule.every().day.at("22:00").do(send_jobs)
 
 print("Job Bot is running... Press Ctrl+C to stop.")
 while True:
