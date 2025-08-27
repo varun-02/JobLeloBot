@@ -72,7 +72,7 @@ def send_jobs():
 # ===============================
 # 🔹 Scheduler (runs daily)
 # ===============================
-schedule.every().day.at("16:50").do(send_jobs)  # 16:50 UTC = 22:20 IST
+schedule.every().day.at("17:00").do(send_jobs)  # 16:50 UTC = 22:20 IST
 
 print("✅ Job Bot is running... Press Ctrl+C to stop.")
 while True:
