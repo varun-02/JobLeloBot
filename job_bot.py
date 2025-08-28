@@ -10,8 +10,6 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 RAPID_API_KEY = os.getenv("RAPID_API_KEY")
 
-print("🔍 API Response:", response.status_code, response.text)
-
 # ===============================
 # 🔹 Fetch Jobs from LinkedIn API
 # ===============================
@@ -77,6 +75,9 @@ def send_jobs():
 schedule.every().day.at("17:30").do(send_jobs)  # 16:50 UTC = 22:20 IST
 
 print("✅ Job Bot is running... Press Ctrl+C to stop.")
+if __name__ == "__main__":
+    send_jobs()   # run immediately to test
+
 while True:
     schedule.run_pending()
     time.sleep(1)
