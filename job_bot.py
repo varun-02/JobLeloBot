@@ -10,6 +10,11 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 RAPID_API_KEY = os.getenv("RAPID_API_KEY")
 
+print("BOT_TOKEN:", bool(BOT_TOKEN))
+print("CHAT_ID:", CHAT_ID)
+print("RAPID_API_KEY:", bool(RAPID_API_KEY))
+
+
 # ===============================
 # 🔹 Fetch Jobs from LinkedIn API
 # ===============================
